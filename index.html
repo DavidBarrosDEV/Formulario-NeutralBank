@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastre sua Área de floresta</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="main-container">
+    <h1 style="color: rgb(18, 225, 70);">Cadastre sua Área de floresta</h1>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="text">Qual a localização da área?</label>
+        <input type="text" name="localização" id="localização" placeholder="Municipio e Coordenadas da Propriedade" data-min-length="2" >
+      </div>
+      <div class="half-box spacing">
+          <label for="name">Qual o Tamanho da Propriedade?</label>
+          <input type="number" name="hec" id="name" placeholder="hectares 1 ha = 10000 m2)" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class=>
+          <label for="lastname">Em qual bioma se insere a propriedade?</label>
+          <select name="bioma" style=" margin-top: 10px;">
+            <option value="Amazônico">Amazônico</option>
+            <option value="cerrado">Cerrado</option>
+            <option value="caatinga">Caatinga</option>
+            <option value="Pantanal">Pantanal</option>
+            <option value="pampa">Pampa</option>
+          </select><br><br>
+      </div>
+      <div class=>
+        <label for="lastname">Há noticia de invasores ou posseiros na área?</label>
+        <select name="bioma" style=" margin-top: 10px;">
+          <option value="SIM">SIM</option>
+          <option value="NÃO">NÃO</option>
+        </select><br><br>
+      </div>
+      <div class=>
+        <label for="passconfirmation">Existem Unidades de Conservação no interior do imóvel?</label>
+        <input type="text" name="Unidades DE Conservação" id="Conservação" placeholder="parque, reserva, estação ecológica etc." data-equal="password">
+      </div>
+
+      <div class="full-box">
+        <label for="text">É realizado manejo florestal sustentável na área?</label>
+        <input type="text" name="manejo florestal" id="email" placeholder="" data-min-length="2" >
+      </div>
+
+      <div class="full-box">
+        <label for="text"> Ha intenção de desmatamento na propriedade?</label>
+        <input type="text" name="intenção de desmatamento" id="email" placeholder="Caso positivo, qual a estimativa em área?" data-min-length="2">
+      </div>
+      <h2 style="color: rgb(18, 225, 70);">Documentos:</h2><br><br>
+      <hr>
+      
+      <div class="full-box">
+        <label for="myfile">Comprovante de inscrição</label>
+        <input type="file" id="myfile" name="Documentos">
+      </div>
+      <div class="full-box">
+        <label for="myfile">Cadastro Ambiental Rural (CAR)</label>
+        <input type="file" id="myfile" name="Documentos">
+      </div>
+      <div class="full-box">
+        <label for="myfile">Certificado de Cadastro de Imóvel Rural (CCIR)</label>
+        <input type="file" id="myfile" name="Documentos">
+      </div>
+      <div class="full-box">
+        <label for="myfile">Comprovante de georreferenciamento</label>
+        <input type="file" id="myfile" name="Documentos">
+      </div>
+      <div class="full-box">
+        <label for="myfile">Comprovante de pagamento de imposto sobre a propriedade territorial rural (ITR) do último ano de exercício.
+        </label>
+        <input type="file" id="myfile" name="Documentos">
+      </div>
+      <div class="full-box">
+        <label for="myfile">Planta topográfica e arquivo em formato kmz elaborado no Google Earth contendo o perímetro da área</label>
+        <input type="file" id="myfile" name="Documentos">
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="JAERA.html ">termos de uso</a></label>
+      </div>
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Registrar" onclick="www.google.com">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
